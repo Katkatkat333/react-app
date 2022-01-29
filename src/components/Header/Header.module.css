@@ -1,0 +1,11 @@
+.logo {
+    padding-left: 20px;
+    width: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    grid-area: h;
+    background: black;
+}

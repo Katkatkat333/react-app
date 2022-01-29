@@ -1,31 +1,9 @@
 .app-wrapper {
   display: grid;
-  grid-template-areas: "h h " "n c ";
+  grid-template-areas: "h h" "n c";
   grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 2fr 11fr;
   grid-gap: 10px;
+  height: 100vh;
 }
 
-.logo {
-  width: 90px;
-}
-
-.header {
-  grid-area: h;
-  background: lightsteelblue;
-}
-
-.nav {
-  grid-area: n;
-  background: #114161;
-  color: white;
-}
-
-.content {
-  grid-area: c;
-  background: #c3d5e0;
-}
-
-.banner {
-  background-size: cover;
-}

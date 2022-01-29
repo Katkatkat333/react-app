@@ -1,0 +1,19 @@
+.nav {
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+.item {
+    padding-bottom: 20px;
+}
+
+.item.active {
+    color: aqua;
+}
+
+.link {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 20px;
+}

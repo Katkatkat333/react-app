@@ -1,0 +1,19 @@
+.MyProfile {
+    height: 150px;
+    background: white;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatar {
+    background: url("https://m.media-amazon.com/images/I/612Qg2cbJKL._AC_SX466_.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+
+.description {
+    margin-left: 50px;
+}

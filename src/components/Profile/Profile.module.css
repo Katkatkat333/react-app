@@ -1,0 +1,20 @@
+.content {
+    height: calc(100vh - 70px);
+    grid-area: c;
+    background: whitesmoke;
+    overflow-x: hidden;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    height: 450px;
+    background: url('https://thewayweseeit.org/wp-content/uploads/2016/08/Black-and-white-photography-1024x650.jpg');
+}
+
+.title {
+    color: white;
+    font-size: 90px;
+    margin: 0;
+    padding-left: 10px;
+}
