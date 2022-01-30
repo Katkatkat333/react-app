@@ -8,8 +8,10 @@
     padding-bottom: 20px;
 }
 
-.item.active {
-    color: aqua;
+.item a.activeLink {
+    border-bottom: 3px solid white;
+    font-weight: 500;
+    color: white;
 }
 
 .link {
