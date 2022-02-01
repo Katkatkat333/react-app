@@ -3,14 +3,14 @@ import s from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
 import MyProfile from "./MyPosts/MyProfile/MyProfile";
 
-const Profile = ({state}) => {
+const Profile = ({state, addPost}) => {
     return (
         <div>
             <div className={s.banner}>
                 <h1 className={s.title}> Little world in<br/>  Black&White</h1>
             </div>
             <MyProfile/>
-            <MyPosts postData={state.postData}/>
+            <MyPosts postData={state.postData} addPost={addPost}/>
         </div>
     )
 }

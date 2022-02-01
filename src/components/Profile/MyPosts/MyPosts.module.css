@@ -21,7 +21,20 @@
     font-size: 20px;
     padding: 20px 40px;
     margin-left: 20px;
-    background: black;
-    color: white;
-    border: 1px solid white;
+    background: linear-gradient(45deg, rgba(255, 192, 203, 1), rgba(238, 130, 238, 1));
+    color: black;
+    border:0;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    border-radius: 15px;
+}
+
+.newPost {
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.3);
+    height: 36px;
+    outline: none;
+    resize: none;
 }

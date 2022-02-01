@@ -1,0 +1,22 @@
+.friends {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    text-align: center;
+}
+
+.avatar {
+    text-align: center;
+}
+
+.friendAvatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.friendName {
+    font-size: 8px;
+}
