@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import s from './MyPosts.module.css';
 import Post from "./Post/Post";
-import {updateNewPostText} from "../../../redux/state";
 
 const MyPosts = ({postData, addPost, newPostText, updateNewPostText}) => {
 
@@ -19,8 +18,8 @@ const MyPosts = ({postData, addPost, newPostText, updateNewPostText}) => {
         updateNewPostText(text);
     }
 
-    const [postTextArea, setPostTextArea] = useState('');
-    console.log('postTextArea: ', postTextArea)
+    /*const [postTextArea, setPostTextArea] = useState('');
+    console.log('postTextArea: ', postTextArea)*/
 
     return (
         <div className={s.MyPosts}>
@@ -33,7 +32,7 @@ const MyPosts = ({postData, addPost, newPostText, updateNewPostText}) => {
                           value={newPostText}
                           /*value={postTextArea}*/
                           ref={newPostElement}
-                          className={s.newPost}></textarea>
+                          className={s.newPost}/>
                 <button className={s.button} onClick={addNewPost}>Add post</button>
             </div>
             <div className={s.posts}>
