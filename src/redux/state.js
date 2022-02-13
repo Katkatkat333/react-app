@@ -1,5 +1,6 @@
 let store = {
     _state: {
+        theme: 'light',
         profile: {
             postData: [
                 {id: 1, message: 'Hello, My name is Kate', likes: 6},
@@ -29,6 +30,10 @@ let store = {
                 {id: 3, name: 'Anna', surname: 'Babko', avatar: 'https://img.freepik.com/free-photo/the-beautiful-girl-stands-near-walll-with-leaves_8353-5378.jpg'},
             ]
         }
+    },
+    changeTheme(theme) {
+        this._state.theme = theme;
+        this._callSubscriber(this._state);
     },
     getState() {
         return this._state;

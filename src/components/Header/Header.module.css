@@ -1,11 +1,18 @@
 .logo {
-    padding-left: 20px;
-    width: 50px;
+    width: 40px;
 }
 
 .header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     grid-area: h;
     background: var(--surface);
+    padding: 0 20px;
+}
+
+.themeIcon {
+    width: 20px;
+    height: 20px;
+    fill: var(--on-surface);
 }

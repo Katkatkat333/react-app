@@ -7,12 +7,13 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Settings from "./components/Settings/Settings";
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
+import classNames from "classnames";
 
-const App = ({state, addPost, updateNewPostText, addMessage, updateNewMessageText}) => {
+const App = ({state, changeTheme, addPost, updateNewPostText, addMessage, updateNewMessageText}) => {
     return (
         <BrowserRouter>
-            <div className="app-wrapper">
-                <Header/>
+            <div className={classNames('app-wrapper', {'darkTheme': state.theme === 'dark'})}>
+                <Header theme={state.theme} changeTheme={changeTheme}/>
                 <Nav state={state.friends}/>
                 <div className="app-wrapper-content">
                     <Routes>

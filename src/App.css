@@ -8,6 +8,16 @@
   --box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
 }
 
+.darkTheme {
+  --secondary: linear-gradient(45deg, rgba(255, 192, 203, 1), rgba(238, 130, 238, 1));;
+  --on-secondary: white;
+  --background: black;
+  --on-background: white;
+  --surface: white;
+  --on-surface: black;
+  --box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
 .app-wrapper {
   display: grid;
   grid-template-areas: "h h" "n c";
@@ -15,6 +25,7 @@
   grid-template-columns: 2fr 11fr;
   grid-gap: 10px;
   height: 100vh;
+  background: var(--background);
 }
 
 .app-wrapper-content {
