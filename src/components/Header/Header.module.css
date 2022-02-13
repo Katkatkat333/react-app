@@ -7,5 +7,5 @@
     display: flex;
     align-items: center;
     grid-area: h;
-    background: black;
+    background: var(--surface);
 }

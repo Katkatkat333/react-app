@@ -1,7 +1,7 @@
 .item {
     font-size: 20px;
     padding: 10px 20px;
-    color: white;
+    color: var(--on-surface);
 }
 
 .item img {

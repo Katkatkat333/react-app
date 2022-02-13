@@ -1,3 +1,13 @@
+:root {
+  --secondary: linear-gradient(45deg, rgba(255, 192, 203, 1), rgba(238, 130, 238, 1));;
+  --on-secondary: black;
+  --background: white;
+  --on-background: black;
+  --surface: black;
+  --on-surface: white;
+  --box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
 .app-wrapper {
   display: grid;
   grid-template-areas: "h h" "n c";

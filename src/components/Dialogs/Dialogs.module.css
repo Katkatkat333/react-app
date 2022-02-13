@@ -7,19 +7,19 @@
 }
 
 .dialog_items {
-    background: black;
+    background: var(--surface);
     width: 200px;
     padding: 30px 50px;
     height: calc(100vh - 130px);
 }
 
 .dialog {
-    color: white;
+    color: var(--on-surface);
     padding-bottom: 10px;
 }
 
 .messages {
-    background: white;
+    background: var(--background);
     width: 100%;
     padding: 30px 50px;
     height: calc(100vh - 130px);
@@ -27,7 +27,7 @@
 
 .message {
     padding: 10px;
-    background: linear-gradient(45deg, rgba(255, 192, 203, 0.56), rgba(238, 130, 238, 0.75));
+    background: var(--secondary);
     border-radius: 10px 0;
     margin-bottom: 10px;
     box-shadow:4px 4px 10px rgba(0,0,0,0.05);
@@ -36,11 +36,10 @@
 
 .dialog a.activeLink {
     font-weight: 500;
-    color: white;
 }
 
 .link {
-    color: #cccccc;
+    color: var(--on-surface);
     text-decoration: none;
     font-size: 16px;
 }
@@ -49,10 +48,10 @@
     font-size: 20px;
     padding: 20px 40px;
     margin-left: 20px;
-    background: linear-gradient(45deg, rgba(255, 192, 203, 0.56), rgba(238, 130, 238, 0.75));
-    color: black;
+    background: var(--secondary);
+    color: var(--on-secondary);
     border:0;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: var(--box-shadow);
     border-radius: 15px;
 }
 
@@ -69,7 +68,7 @@
     padding: 15px;
     border-radius: 0 15px 15px 0;
     border:0;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: var(--box-shadow);
     height: 40px;
     outline: none;
     resize: none;

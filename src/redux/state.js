@@ -42,8 +42,9 @@ let store = {
             message: this._state.profile.newPostText,
             likes: 0,
         };
-
-        this._state.profile.postData.push(newPost);
+        if (newPost.message) {
+            this._state.profile.postData.push(newPost);
+        }
         this._state.profile.newPostText = '';
         this._callSubscriber(this._state);
     },
@@ -52,12 +53,13 @@ let store = {
         this._callSubscriber(this._state);
     },
     addMessage() {
-        debugger;
         let newMessage = {
             id: 100,
             text: this._state.dialogs.newMessageText,
         }
-        this._state.dialogs.messagesData.push(newMessage);
+        if (newMessage.text) {
+            this._state.dialogs.messagesData.push(newMessage);
+        }
         this._state.dialogs.newMessageText = '';
         this._callSubscriber(this._state);
     },

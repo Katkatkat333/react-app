@@ -3,11 +3,11 @@ import s from './Friends.module.css';
 
 const Friends = ({state}) => {
 
-    let friendsElements = state.map((friend) => {
+    let friendsElements = state.map((friend, index) => {
             return (
-                <div>
+                <div key={index}>
                     <div className={s.avatar}>
-                        <img className={s.friendAvatar} src={friend.avatar}/>
+                        <img className={s.friendAvatar} src={friend.avatar} alt=""/>
                     </div>
                     <div className={s.friendName}>
                         {friend.name} {friend.surname}

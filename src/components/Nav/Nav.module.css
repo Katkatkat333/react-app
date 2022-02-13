@@ -1,7 +1,7 @@
 .nav {
     padding: 20px;
-    background: black;
-    color: white;
+    background: var(--surface);
+    color: var(--on-surface);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -14,7 +14,7 @@
 .item a.activeLink {
     border-bottom: 3px solid white;
     font-weight: 500;
-    color: white;
+    color: var(--on-surface);
 }
 
 .link {
